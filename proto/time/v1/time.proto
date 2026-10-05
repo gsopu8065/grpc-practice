@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package time.v1;
+
+// TimeService is an internal service. Only the backend calls it —
+// the frontend never talks to it directly.
+service TimeService {
+  rpc GetTime(GetTimeRequest) returns (GetTimeResponse) {}
+}
+
+message GetTimeRequest {}
+
+message GetTimeResponse {
+  string iso_time = 1;
+}

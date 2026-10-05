@@ -1,0 +1,11 @@
+version: v2
+plugins:
+  - local: protoc-gen-es
+    out: backend/src/gen
+    opt: target=ts
+  - local: protoc-gen-es
+    out: frontend/src/gen
+    opt: target=ts
+  - local: protoc-gen-es
+    out: time-service/src/gen
+    opt: target=ts

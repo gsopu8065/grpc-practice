@@ -1,0 +1,12 @@
+{
+  "name": "grpc-practice",
+  "private": true,
+  "description": "Learning playground: a gRPC/Connect backend and a browser frontend that calls it.",
+  "scripts": {
+    "generate": "buf generate"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.73.0",
+    "@bufbuild/protoc-gen-es": "^2.15.0"
+  }
+}
